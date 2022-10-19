@@ -6,7 +6,7 @@ print(sum(l))
 
 # Method 2
 
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes = list(map(int, fi.read().splitlines()))
 
 primes_set = set(primes)
