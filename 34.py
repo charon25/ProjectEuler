@@ -1,4 +1,4 @@
-# Method 1 OEIS
+# Method 1 OEIS A014080
 
 print(145 + 40585)
 
