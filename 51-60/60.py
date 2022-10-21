@@ -1,7 +1,7 @@
 from collections import deque
 from math import isqrt
 
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes_str = fi.read().splitlines()
 
 primes_str.pop(2) # 5

@@ -1,4 +1,4 @@
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes = list(map(int, fi.read().splitlines()))
 
 TWO_POWERS = [tuple(bin(n)[2:].zfill(k) for n in range(1, 2**k) if bin(n).count('1') != 1) for k in range(20)]

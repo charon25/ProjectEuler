@@ -1,7 +1,7 @@
 # The diagonals number can be computed with 4*n^2+(k - 4)+1 where k is 2, 4, 6 or 8 and n = (size - 1) / 2
 # When k = 8, the number is a perfect square and therefore does not need to be checked for primality
 
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes = set(map(int, fi.read().splitlines()))
 
 from math import isqrt
