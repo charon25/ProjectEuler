@@ -1,6 +1,6 @@
 from itertools import combinations
 
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes = list(map(int, fi.read().splitlines()))
 
 LIMIT = 10**7
