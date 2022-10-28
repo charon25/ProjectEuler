@@ -1,4 +1,4 @@
-with open('primes.txt', 'r') as fi:
+with open('..\\primes.txt', 'r') as fi:
     primes = list(map(int, fi.read().splitlines()))
 
 def count_ways(LIMIT, coins):
