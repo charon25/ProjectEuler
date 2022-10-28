@@ -22,7 +22,6 @@ for y in range(HEIGHT):
         graph[(x, y)] = neighbors
 
 def dijkstra(SOURCE):
-    print(SOURCE)
     dist = dict()
     prev = dict()
     Q = list()
