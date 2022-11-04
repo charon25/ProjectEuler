@@ -2,7 +2,7 @@ from functools import lru_cache
 from math import sqrt
 
 # OEIS A046090
-# Gives every integer n such that n² + (n - 1)² is a perfect square
+# Gives every integer N such that N² + (N - 1)² is a perfect square
 # it can be proven that this is enough to have ((b / N) * (b - 1) / (N - 1)) = 1/2
 @lru_cache
 def a(n):
