@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        P001_010.P001();
+        Utils.LoadPrimes();
+
+        P001_010.P005();
     }
 }
