@@ -1,0 +1,15 @@
+E:\Autres\ProjectEuler\c#\ProjectEuler\bin\Debug\net6.0\ProjectEuler.exe
+E:\Autres\ProjectEuler\c#\ProjectEuler\bin\Debug\net6.0\ProjectEuler.deps.json
+E:\Autres\ProjectEuler\c#\ProjectEuler\bin\Debug\net6.0\ProjectEuler.runtimeconfig.json
+E:\Autres\ProjectEuler\c#\ProjectEuler\bin\Debug\net6.0\ProjectEuler.dll
+E:\Autres\ProjectEuler\c#\ProjectEuler\bin\Debug\net6.0\ProjectEuler.pdb
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.csproj.AssemblyReference.cache
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.GeneratedMSBuildEditorConfig.editorconfig
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.AssemblyInfoInputs.cache
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.AssemblyInfo.cs
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.csproj.CoreCompileInputs.cache
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.dll
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\refint\ProjectEuler.dll
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.pdb
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ProjectEuler.genruntimeconfig.cache
+E:\Autres\ProjectEuler\c#\ProjectEuler\obj\Debug\net6.0\ref\ProjectEuler.dll
