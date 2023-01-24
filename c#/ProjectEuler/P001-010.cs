@@ -51,4 +51,29 @@ class P001_010 {
         Console.WriteLine(n);
     }
 
+    public static void P006() {
+        const int N = 100;
+        int sum_of_squares = (N * (N + 1) * (2 * N + 1)) / 6;
+        int square_of_sum = (N * (N + 1) * N * (N + 1)) / 4;
+
+        Console.WriteLine(square_of_sum - sum_of_squares);
+    }
+
+    public static void P007() {
+        const int TARGET = 10_001 - 1;
+        Console.WriteLine(Utils.PRIMES[TARGET]);
+    }
+
+    public static void P008() {
+        const int TARGET_LENGTH = 13;
+        string number = File.ReadAllText("data\\008.txt");
+        long biggest = 0;
+        for (int i = 0; i < number.Length - TARGET_LENGTH + 1; i++) {
+            long product = Utils.DigitsProduct(number.Substring(i, TARGET_LENGTH));
+            if (product > biggest) biggest = product;
+        }
+
+        Console.WriteLine(biggest);
+    }
+
 }

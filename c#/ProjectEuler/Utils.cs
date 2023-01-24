@@ -48,6 +48,33 @@ class Utils {
         return n_str.Equals(new string(n_str.Reverse().ToArray()));
     }
 
+    public static int DigitsSum(int n) {
+        return DigitsSum(n.ToString());
+    }
+    public static int DigitsSum(long n) {
+        return DigitsSum(n.ToString());
+    }
+    public static int DigitsSum(string str) {
+        int sum = 0;
+        foreach (char c in str) sum += (c - '0');
+        return sum;
+    }
+
+    public static long DigitsProduct(int n) {
+        return DigitsProduct(n.ToString());
+    }
+    public static long DigitsProduct(long n) {
+        return DigitsProduct(n.ToString());
+    }
+    public static long DigitsProduct(string str) {
+        long product = 1;
+        foreach (char c in str) {
+            if (c == '0') return 0;
+            product *= (c - '0');
+        }
+        return product;
+    }
+
 
     // NUMBERS
     public static int GCD(int a, int b) {
@@ -56,15 +83,15 @@ class Utils {
         }
         return a;
     }
-
-    public static int LCM(int a, int b) {
-        return (a / GCD(a, b)) * b;
-    }
     public static long GCD(long a, long b) {
         while (b > 0) {
             (a, b) = (b, a % b);
         }
         return a;
+    }
+
+    public static int LCM(int a, int b) {
+        return (a / GCD(a, b)) * b;
     }
     public static long LCM(long a, long b) {
         return (a / GCD(a, b)) * b;
