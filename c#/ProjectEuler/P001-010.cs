@@ -76,4 +76,27 @@ class P001_010 {
         Console.WriteLine(biggest);
     }
 
+    public static void P009() {
+        const int LIMIT = 1000;
+        for (int a = 1; a < LIMIT; a++) {
+            for (int b = a + 1; b < LIMIT - a; b ++) {
+                int c_2 = a * a + b * b;
+                double sqrt = Math.Sqrt((double)c_2);
+                if (sqrt % 1 == 0 && a + b + (int)sqrt == LIMIT) Console.WriteLine(a * b * (int)sqrt);
+            }
+        }
+    }
+
+    public static void P010() {
+        const int LIMIT = 2_000_000;
+        long sum = 0L;
+
+        for (int i = 0; i < Utils.PRIME_COUNT; i++) {
+            if (Utils.PRIMES[i] >= LIMIT) break;
+            sum += (long)Utils.PRIMES[i];
+        }
+
+        Console.WriteLine(sum);
+    }
+
 }

@@ -7,7 +7,7 @@ class Program
         Utils.LoadPrimes();
 
         if (args.Length == 0) {
-            P001_010.P008();
+            P001_010.P010();
         } else if (args[0] == "test") {
             Console.WriteLine("Running tests...\n");
             TestUtils.RunAllTests();
