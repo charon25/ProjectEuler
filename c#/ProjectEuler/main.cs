@@ -8,7 +8,7 @@ class Program
 
         if (args.Length == 0) {
             P001_010.P008();
-        } else if (args[1] == "test") {
+        } else if (args[0] == "test") {
             Console.WriteLine("Running tests...\n");
             TestUtils.RunAllTests();
         }
