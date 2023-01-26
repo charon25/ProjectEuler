@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace ProjectEuler;
 
 class TestUtils {
@@ -6,6 +8,8 @@ class TestUtils {
         TestDigitsSum();
         TestDigitsProduct();
         TestPythagoreanTriplets();
+        TestGetDivisorCountNotProper();
+        TestFactorial();
 
         Console.WriteLine("");
     }
@@ -46,6 +50,27 @@ class TestUtils {
             if (triplet[0] + triplet[1] + triplet[2] > LIMIT) throw new Exception("Test TestPythagoreanTriplets[limit:700] fail : triplet greater than limit.");
             AssertEqual(triplet[0] * triplet[0] + triplet[1] * triplet[1], triplet[2] * triplet[2], "TestPythagoreanTriplets[limit:700]");
         }
+    }
+
+    public static void TestGetDivisorCountNotProper() {
+        AssertEqual(Utils.GetDivisorCount(6), 4, "TestGetDivisorCountNotProper[6]");
+        AssertEqual(Utils.GetDivisorCount(25), 3, "TestGetDivisorCountNotProper[25]");
+        AssertEqual(Utils.GetDivisorCount(1), 1, "TestGetDivisorCountNotProper[1]");
+        AssertEqual(Utils.GetDivisorCount(17), 2, "TestGetDivisorCountNotProper[1]");
+    }
+
+    public static void TestGetDivisorCountProper() {
+        AssertEqual(Utils.GetDivisorCount(6, true), 3, "TestGetDivisorCountProper[6]");
+        AssertEqual(Utils.GetDivisorCount(25, true), 2, "TestGetDivisorCountProper[25]");
+        AssertEqual(Utils.GetDivisorCount(1, true), 0, "TestGetDivisorCountProper[1]");
+        AssertEqual(Utils.GetDivisorCount(17, true), 1, "TestGetDivisorCountProper[1]");
+    }
+
+    public static void TestFactorial() {
+        AssertEqual(Utils.Factorial(0), new BigInteger(1), "TestFactorial[0]");
+        AssertEqual(Utils.Factorial(1), new BigInteger(1), "TestFactorial[1]");
+        AssertEqual(Utils.Factorial(3), new BigInteger(6), "TestFactorial[3]");
+        AssertEqual(Utils.Factorial(10), new BigInteger(3628800), "TestFactorial[10]");
     }
 
 }

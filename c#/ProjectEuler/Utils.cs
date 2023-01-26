@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace ProjectEuler;
 
 class Utils {
@@ -43,6 +45,20 @@ class Utils {
             p++;
         }
         return factors;
+    }
+    public static int GetDivisorCount(int n, bool proper = false) {
+        return GetDivisorCount((long)n, proper);
+    }
+    public static int GetDivisorCount(long n, bool proper = false) {
+        int count = 0;
+        long sqrt_n = (long)Math.Sqrt(n);
+
+        for (int d = 1; d <= sqrt_n; d++) {
+            if (n % d == 0) count += 2;
+        }
+        if (sqrt_n * sqrt_n == n) count -= 1;
+
+        return proper ? count - 1 : count;
     }
 
 
@@ -99,6 +115,12 @@ class Utils {
     }
     public static long LCM(long a, long b) {
         return (a / GCD(a, b)) * b;
+    }
+
+    public static BigInteger Factorial(int n) {
+        BigInteger product = 1;
+        for (int i = 2; i <= n; i++) product *= i;
+        return product;
     }
 
 

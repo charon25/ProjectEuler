@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace ProjectEuler;
 
 class P011_020 {
@@ -44,6 +46,62 @@ class P011_020 {
 
 
         Console.WriteLine(biggest);
+    }
+
+    public static void P012() {
+        const int TARGET = 500;
+        int n = 1;
+        while (true) {
+            int t = (n * (n + 1)) / 2;
+            if (Utils.GetDivisorCount(t) > TARGET) {
+                Console.WriteLine(t);
+                break;
+            }
+            n++;
+        }
+    }
+
+    public static void P013() {
+        string[] lines = File.ReadAllLines("data\\013.txt");
+        BigInteger sum = 0;
+        foreach (string line in lines) {
+            sum += BigInteger.Parse(line);
+        }
+
+        Console.WriteLine(sum.ToString().Substring(0, 10));
+    }
+
+    public static int CollatzSequenceLength(long n) {
+        int length = 0;
+        while (n > 1) {
+            if (n % 2 == 0) {
+                n /= 2;
+                length++;
+            } else {
+                n = (3 * n + 1);// / 2;
+                length++;
+            }
+        }
+        return length;
+    }
+    public static void P014() {
+        const int LIMIT = 1_000_000;
+        int biggest = 0, longest = 0;
+        for (int n = 1 ; n < LIMIT; n++) {
+            int length = CollatzSequenceLength((long)n);
+            if (length > longest) {
+                longest = length;
+                biggest = n;
+            }
+        }
+
+        Console.WriteLine(biggest);
+    }
+
+    public static void P015() {
+        BigInteger factorial_40 = Utils.Factorial(40);
+        BigInteger factorial_20 = Utils.Factorial(20);
+        Console.WriteLine(factorial_40 / (factorial_20 * factorial_20));
     }
 
 }
