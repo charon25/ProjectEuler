@@ -7,7 +7,6 @@ for a in range(1, 1000 + 1):
         c2 = a * a + b * b
         c = isqrt(c2)
         if a + b + c == 1000 and c ** 2 == c2:
-            print(a, b, c)
             print(a * b * c)
 
 # Method 2

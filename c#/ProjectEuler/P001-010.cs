@@ -19,7 +19,7 @@ class P001_010 {
             if (b % 2 == 0) somme += b;
             (a, b) = (b, a + b);
         }
-        
+
         Console.WriteLine(somme);
     }
 
