@@ -74,10 +74,11 @@ class Utils {
     public static int DigitsSum(long n) {
         return DigitsSum(n.ToString());
     }
+    public static int DigitsSum(BigInteger n) {
+        return DigitsSum(n.ToString());
+    }
     public static int DigitsSum(string str) {
-        int sum = 0;
-        foreach (char c in str) sum += (c - '0');
-        return sum;
+        return str.Sum(c => c - '0');
     }
 
     public static long DigitsProduct(int n) {

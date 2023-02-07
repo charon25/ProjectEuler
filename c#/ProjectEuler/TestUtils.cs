@@ -30,6 +30,7 @@ class TestUtils {
         AssertEqual(Utils.DigitsSum(123456), 1 + 2 + 3 + 4 + 5 + 6, "TestDigitsSum[int]");
         AssertEqual(Utils.DigitsSum(888888888888), 8 * 12, "TestDigitsSum[long]");
         AssertEqual(Utils.DigitsSum("123456"), 1 + 2 + 3 + 4 + 5 + 6, "TestDigitsSum[string]");
+        AssertEqual(Utils.DigitsSum(new BigInteger(123456)), 1 + 2 + 3 + 4 + 5 + 6, "TestDigitsSum[BigInteger]");
     }
 
     public static void TestDigitsProduct() {
